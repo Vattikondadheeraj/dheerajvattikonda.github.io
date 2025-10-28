@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dheeraj Vattikonda</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
             line-height: 1.65;
@@ -21,150 +16,55 @@
             margin: 0 auto;
             font-size: 15px;
         }
-
-        h1 {
-            font-size: 32px;
-            font-weight: 400;
-            margin-bottom: 35px;
-            color: #000;
-            letter-spacing: -0.5px;
-        }
-
-        p {
-            margin-bottom: 1em;
-        }
-
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-            transition: opacity 0.2s;
-        }
-
-        a:hover {
-            opacity: 0.7;
-        }
-
-        .section {
-            margin-top: 50px;
-        }
-
-        .section h2 {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: #000;
-        }
-
-        .paper {
-            margin-bottom: 35px;
-            display: flex;
-            gap: 20px;
-        }
-
-        .paper-image {
-            flex-shrink: 0;
-            width: 200px;
-            height: 150px;
-        }
-
-        .paper-image img,
-        .paper-image video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border: 1px solid #e0e0e0;
-        }
-
-        .paper-image video {
-            background: #f5f5f5;
-        }
-
-        .paper-content {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .paper-title {
-            font-weight: 500;
-            margin-bottom: 5px;
-            line-height: 1.4;
-        }
-
-        .paper-authors {
-            color: #666;
-            margin-bottom: 5px;
-            font-size: 14px;
-        }
-
-        .paper-venue {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 8px;
-        }
-
-        .paper-links {
-            font-size: 14px;
-        }
-
-        .paper-links a {
-            margin-right: 12px;
-        }
-
-        .mentee-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .mentee-list li {
-            margin-bottom: 10px;
-            padding-left: 18px;
-            position: relative;
-            line-height: 1.6;
-        }
-
-        .mentee-list li:before {
-            content: "-";
-            position: absolute;
-            left: 0;
-            color: #666;
-        }
-
+        h1 { font-size: 32px; font-weight: 400; margin-bottom: 35px; color: #000; letter-spacing: -0.5px; }
+        p { margin-bottom: 1em; }
+        a { color: #1a73e8; text-decoration: none; transition: opacity 0.2s; }
+        a:hover { opacity: 0.7; }
+        .section { margin-top: 50px; }
+        .section h2 { font-size: 16px; font-weight: 600; margin-bottom: 20px; color: #000; }
+        .paper { margin-bottom: 35px; display: flex; gap: 20px; }
+        .paper-image { flex-shrink: 0; width: 200px; height: 150px; }
+        .paper-image img, .paper-image video { width: 100%; height: 100%; object-fit: cover; border: 1px solid #e0e0e0; }
+        .paper-image video { background: #f5f5f5; }
+        .paper-content { flex: 1; min-width: 0; }
+        .paper-title { font-weight: 500; margin-bottom: 5px; line-height: 1.4; }
+        .paper-authors { color: #666; margin-bottom: 5px; font-size: 14px; }
+        .paper-venue { color: #666; font-size: 14px; margin-bottom: 8px; }
+        .paper-links { font-size: 14px; }
+        .paper-links a { margin-right: 12px; }
+        .mentee-list { list-style: none; padding: 0; }
+        .mentee-list li { margin-bottom: 10px; padding-left: 18px; position: relative; line-height: 1.6; }
+        .mentee-list li:before { content: "-"; position: absolute; left: 0; color: #666; }
+        .profile-pic { display:block; width:140px; height:140px; border-radius: 12px; object-fit: cover; margin-bottom: 20px; border:1px solid #e0e0e0; }
         @media (max-width: 650px) {
-            body {
-                padding: 40px 20px;
-                font-size: 14px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            .paper {
-                flex-direction: column;
-            }
-
-            .paper-image {
-                width: 100%;
-                height: 200px;
-            }
+            body { padding: 40px 20px; font-size: 14px; }
+            h1 { font-size: 28px; }
+            .paper { flex-direction: column; }
+            .paper-image { width: 100%; height: 200px; }
         }
     </style>
 </head>
 <body>
     <h1>Dheeraj Vattikonda</h1>
-    
+    <img src="images/profile.jpg" alt="Dheeraj Vattikonda" class="profile-pic" />
+
     <p>
-        I work on reinforcement learning and reasoning with LLM agents with <a href="https://scholar.google.ca/citations?user=NPe1Z_YAAAAJ" target="_blank">Massimo Caccia</a> at <a href="https://www.servicenow.com/research/" target="_blank">ServiceNow AI Research</a>, based out of Montreal. 
-        I am also a Master's student at <a href="https://www.mcgill.ca/" target="_blank">McGill University</a> and <a href="https://mila.quebec/en/" target="_blank">Mila</a> 
-        under the guidance of <a href="https://www.cs.mcgill.ca/~xueliu/" target="_blank">Xue (Steve) Liu</a>.
+        I work on reinforcement learning and reasoning with LLM agents with
+        <a href="https://scholar.google.ca/citations?user=NPe1Z_YAAAAJ" target="_blank" rel="noopener noreferrer">Massimo Caccia</a>
+        at <a href="https://www.servicenow.com/research/" target="_blank" rel="noopener noreferrer">ServiceNow AI Research</a>, based out of Montreal.
+        I am also a Master's student at <a href="https://www.mcgill.ca/" target="_blank" rel="noopener noreferrer">McGill University</a> and
+        <a href="https://mila.quebec/en/" target="_blank" rel="noopener noreferrer">Mila</a> under the guidance of
+        <a href="https://www.cs.mcgill.ca/~xueliu/" target="_blank" rel="noopener noreferrer">Xue (Steve) Liu</a>.
     </p>
 
     <p>
-        My current research revolves around reasoning in LLM web agents and tool-calling systems, and my recent work on web agent training received an <a href="#" target="_blank">oral presentation</a> at ICML and will appear at NeurIPS 2025.
+        My current research revolves around reasoning in LLM web agents and tool-calling systems, and my recent work on web agent training received an
+        <a href="#" target="_blank" rel="noopener noreferrer">oral presentation</a> at ICML and will appear at NeurIPS 2025.
     </p>
 
     <p>
-        <a href="https://scholar.google.com/citations?user=XJtv0zoAAAAJ" target="_blank">Google Scholar</a> / 
+        <a href="https://scholar.google.com/citations?user=XJtv0zoAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        /
         <a href="mailto:dheeraj.46329@gmail.com">Email</a>
     </p>
 
@@ -173,21 +73,19 @@
 
         <div class="paper">
             <div class="paper-image">
-                <img src="images/webarena_training.png" alt="Web Agent Training">
+                <img src="images/webarena_training.png" alt="Web Agent Training" />
             </div>
             <div class="paper-content">
                 <div class="paper-title">
-                    <a href="#" target="_blank">How to Train Your LLM Web Agent: A Statistical Diagnosis</a>
+                    <a href="https://arxiv.org/abs/2507.04103" target="_blank" rel="noopener noreferrer">How to Train Your LLM Web Agent: A Statistical Diagnosis</a>
                 </div>
                 <div class="paper-authors">
                     <strong>Dheeraj Vattikonda</strong>, Emiliano Peñaloza
                 </div>
-                <div class="paper-venue">
-                    NeurIPS 2025, ICML 2025 CUA Workshop (Oral)
-                </div>
+                <div class="paper-venue">NeurIPS 2025, ICML 2025 CUA Workshop (Oral)</div>
                 <div class="paper-links">
-                    <a href="#" target="_blank">paper</a>
-                    <a href="#" target="_blank">slides</a>
+                    <a href="https://arxiv.org/abs/2507.04103" target="_blank" rel="noopener noreferrer">paper</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">slides</a>
                 </div>
             </div>
         </div>
@@ -195,88 +93,70 @@
         <div class="paper">
             <div class="paper-image">
                 <video autoplay loop muted playsinline>
-                    <source src="videos/image_editing.mp4" type="video/mp4">
+                    <source src="videos/image_editing.mp4" type="video/mp4" />
                 </video>
             </div>
             <div class="paper-content">
                 <div class="paper-title">
-                    <a href="#" target="_blank">Learning Action and Reasoning-Centric Image Editing from Videos and Simulations</a>
+                    <a href="https://arxiv.org/abs/2407.03471" target="_blank" rel="noopener noreferrer">Learning Action and Reasoning-Centric Image Editing from Videos and Simulations</a>
                 </div>
-                <div class="paper-authors">
-                    Benno Krojer, <strong>Dheeraj Vattikonda</strong>
-                </div>
-                <div class="paper-venue">
-                    NeurIPS 2024 (Spotlight)
-                </div>
+                <div class="paper-authors">Benno Krojer, <strong>Dheeraj Vattikonda</strong></div>
+                <div class="paper-venue">NeurIPS 2024 (Spotlight)</div>
                 <div class="paper-links">
-                    <a href="#" target="_blank">paper</a>
-                    <a href="#" target="_blank">website</a>
+                    <a href="https://arxiv.org/abs/2407.03471" target="_blank" rel="noopener noreferrer">paper</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">website</a>
                 </div>
             </div>
         </div>
 
         <div class="paper">
             <div class="paper-image">
-                <img src="images/diff_slam.png" alt="Differentiable SLAM">
+                <img src="images/diff_slam.png" alt="Differentiable SLAM" />
             </div>
             <div class="paper-content">
                 <div class="paper-title">
-                    <a href="#" target="_blank">Differentiable SLAM Helps Deep Learning-based LiDAR Perception Tasks</a>
+                    <a href="https://arxiv.org/abs/2309.09206" target="_blank" rel="noopener noreferrer">Differentiable SLAM Helps Deep Learning-based LiDAR Perception Tasks</a>
                 </div>
-                <div class="paper-authors">
-                    Prashant Kumar, <strong>Dheeraj Vattikonda</strong>
-                </div>
-                <div class="paper-venue">
-                    BMVC 2023
-                </div>
+                <div class="paper-authors">Prashant Kumar, <strong>Dheeraj Vattikonda</strong></div>
+                <div class="paper-venue">BMVC 2023</div>
                 <div class="paper-links">
-                    <a href="#" target="_blank">paper</a>
+                    <a href="https://arxiv.org/abs/2309.09206" target="_blank" rel="noopener noreferrer">paper</a>
                 </div>
             </div>
         </div>
 
         <div class="paper">
             <div class="paper-image">
-                <img src="images/slack.png" alt="SLACK">
+                <img src="images/slack.png" alt="SLACK" />
             </div>
             <div class="paper-content">
                 <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2504.03089" target="_blank">SLACK: Attacking LiDAR-based SLAM with Adversarial Point Injections</a>
+                    <a href="https://arxiv.org/abs/2504.03089" target="_blank" rel="noopener noreferrer">SLACK: Attacking LiDAR-based SLAM with Adversarial Point Injections</a>
                 </div>
-                <div class="paper-authors">
-                    Prashant Kumar, <strong>Dheeraj Vattikonda</strong>, Kshitij Madhav Bhat, Kunal Dargan, Prem Kalra
-                </div>
-                <div class="paper-venue">
-                    arXiv 2025
-                </div>
+                <div class="paper-authors">Prashant Kumar, <strong>Dheeraj Vattikonda</strong>, Kshitij Madhav Bhat, Kunal Dargan, Prem Kalra</div>
+                <div class="paper-venue">arXiv 2025</div>
                 <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2504.03089" target="_blank">paper</a>
+                    <a href="https://arxiv.org/abs/2504.03089" target="_blank" rel="noopener noreferrer">paper</a>
                 </div>
             </div>
         </div>
 
         <div class="paper">
             <div class="paper-image">
-                <img src="images/grad_lidar.png" alt="Grad-LiDAR-SLAM">
+                <img src="images/grad_lidar.png" alt="Grad-LiDAR-SLAM" />
             </div>
             <div class="paper-content">
                 <div class="paper-title">
-                    <a href="#" target="_blank">Grad-LiDAR-SLAM: Fully Differentiable Global SLAM for LiDAR with Pose-Graph Optimization</a>
+                    <a href="https://openreview.net/forum?id=tvPtqbjsKgX" target="_blank" rel="noopener noreferrer">Grad-LiDAR-SLAM: Fully Differentiable Global SLAM for LiDAR with Pose-Graph Optimization</a>
                 </div>
-                <div class="paper-authors">
-                    <strong>Dheeraj Vattikonda</strong>, Aryan
-                </div>
-                <div class="paper-venue">
-                    IROS 2022
-                </div>
+                <div class="paper-authors"><strong>Dheeraj Vattikonda</strong>, Aryan</div>
+                <div class="paper-venue">IROS 2022 (Workshop)</div>
                 <div class="paper-links">
-                    <a href="#" target="_blank">paper</a>
-                    <a href="#" target="_blank">code</a>
+                    <a href="https://openreview.net/pdf?id=tvPtqbjsKgX" target="_blank" rel="noopener noreferrer">paper</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">code</a>
                 </div>
             </div>
         </div>
     </div>
-
-
 </body>
 </html>
