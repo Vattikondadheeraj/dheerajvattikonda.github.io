@@ -39,7 +39,6 @@
         .paper-title a { color:#0b57d0; font-weight:600; }
         .paper-title a:hover { text-decoration: underline; }
         .paper-authors { color:#475569; margin-bottom: 5px; font-size: 15px; }
-        .paper-venue { color:#475569; font-size: 15px; margin-bottom: 8px; }
         .paper-links { font-size: 15px; }
         .paper-links a { color:#2563eb; margin-right: 12px; }
         .mentee-list { list-style: none; padding: 0; }
@@ -59,6 +58,18 @@
         .social-links { display:flex; align-items:center; gap:14px; margin-top:12px; flex-wrap: wrap; }
         .social-links .links a { color:#2563eb; text-decoration:none; }
         .social-links .links a + a::before { content:" / "; color:#94a3b8; margin: 0 8px; }
+
+        /* ---- venue tags ---- */
+        .tags{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 10px}
+        .tag{display:inline-flex;align-items:center;padding:3px 10px;border-radius:999px;
+             font-size:13px;font-weight:600;letter-spacing:.01em;border:1px solid transparent;
+             background:#f1f5f9;color:#0f172a;white-space:nowrap}
+        .tag--conf{background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe}
+        .tag--workshop{background:#ecfeff;color:#0e7490;border-color:#67e8f9}
+        .tag--oral{background:#fef2f2;color:#b91c1c;border-color:#fecaca}
+        .tag--spotlight{background:#fff7ed;color:#c2410c;border-color:#fed7aa}
+        .tag--year{background:#f8fafc;color:#334155;border-color:#e2e8f0}
+
         .x-btn { display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; background:#0f1419; color:#fff !important; font-weight:600; text-decoration:none; box-shadow:0 2px 8px rgba(0,0,0,0.12); }
         .x-btn:hover { opacity:.9; }
         
@@ -107,6 +118,7 @@
     <div class="section section-pubs">
         <h2>Selected Publications</h2>
 
+        <!-- Paper 1 -->
         <div class="paper">
             <div class="paper-image">
                 <img src="images/web_agents.png" alt="Web Agent Training" loading="lazy">
@@ -118,7 +130,12 @@
                 <div class="paper-authors">
                     <strong>Dheeraj Vattikonda</strong>, Emiliano Peñaloza
                 </div>
-                <div class="paper-venue">NeurIPS 2025, ICML 2025 CUA Workshop (Oral)</div>
+                <div class="tags">
+                  <span class="tag tag--conf">NeurIPS 2025</span>
+                  <span class="tag tag--conf">ICML 2025</span>
+                  <span class="tag tag--workshop">CUA Workshop</span>
+                  <span class="tag tag--oral">Oral</span>
+                </div>
                 <div class="paper-links">
                     <a href="https://arxiv.org/abs/2507.04103" target="_blank" rel="noopener noreferrer">paper</a>
                     <a href="#" target="_blank" rel="noopener noreferrer">slides</a>
@@ -126,6 +143,7 @@
             </div>
         </div>
 
+        <!-- Paper 2 -->
         <div class="paper">
             <div class="paper-image">
                 <img src="images/aurora.png" alt="Image Editing" loading="lazy">
@@ -135,7 +153,10 @@
                     <a href="https://arxiv.org/abs/2407.03471" target="_blank" rel="noopener noreferrer">Learning Action and Reasoning-Centric Image Editing from Videos and Simulations</a>
                 </div>
                 <div class="paper-authors">Benno Krojer, <strong>Dheeraj Vattikonda</strong></div>
-                <div class="paper-venue">NeurIPS 2024 (Spotlight)</div>
+                <div class="tags">
+                  <span class="tag tag--conf">NeurIPS 2024</span>
+                  <span class="tag tag--spotlight">Spotlight</span>
+                </div>
                 <div class="paper-links">
                     <a href="https://arxiv.org/abs/2407.03471" target="_blank" rel="noopener noreferrer">paper</a>
                     <a href="#" target="_blank" rel="noopener noreferrer">website</a>
@@ -143,6 +164,7 @@
             </div>
         </div>
 
+        <!-- Paper 3 -->
         <div class="paper">
             <div class="paper-image">
                 <img src="images/diff_slam.png" alt="Differentiable SLAM" loading="lazy">
@@ -152,13 +174,16 @@
                     <a href="https://arxiv.org/abs/2309.09206" target="_blank" rel="noopener noreferrer">Differentiable SLAM Helps Deep Learning-based LiDAR Perception Tasks</a>
                 </div>
                 <div class="paper-authors">Prashant Kumar, <strong>Dheeraj Vattikonda</strong></div>
-                <div class="paper-venue">The British Machine Vision Conference (BMVC) 2023</div>
+                <div class="tags">
+                  <span class="tag tag--conf">BMVC 2023</span>
+                </div>
                 <div class="paper-links">
                     <a href="https://arxiv.org/abs/2309.09206" target="_blank" rel="noopener noreferrer">paper</a>
                 </div>
             </div>
         </div>
 
+        <!-- Paper 4 -->
         <div class="paper">
             <div class="paper-image">
                 <img src="images/slack.png" alt="SLACK Attack" loading="lazy">
@@ -168,13 +193,16 @@
                     <a href="https://arxiv.org/abs/2504.03089" target="_blank" rel="noopener noreferrer">SLACK: Attacking LiDAR-based SLAM with Adversarial Point Injections</a>
                 </div>
                 <div class="paper-authors">Prashant Kumar, <strong>Dheeraj Vattikonda</strong>, Kshitij Madhav Bhat, Kunal Dargan, Prem Kalra</div>
-                <div class="paper-venue">IEEE International Conference on Image Processing Challenges and Workshops (ICIPCW) 2024</div>
+                <div class="tags">
+                  <span class="tag tag--conf">ICIPCW 2024</span>
+                </div>
                 <div class="paper-links">
                     <a href="https://arxiv.org/abs/2504.03089" target="_blank" rel="noopener noreferrer">paper</a>
                 </div>
             </div>
         </div>
 
+        <!-- Paper 5 -->
         <div class="paper">
             <div class="paper-image">
                 <img src="images/grad_lidar.png" alt="Grad-LiDAR-SLAM" loading="lazy">
@@ -184,13 +212,23 @@
                     <a href="https://openreview.net/forum?id=tvPtqbjsKgX" target="_blank" rel="noopener noreferrer">Grad-LiDAR-SLAM: Fully Differentiable Global SLAM for LiDAR with Pose-Graph Optimization</a>
                 </div>
                 <div class="paper-authors"><strong>Dheeraj Vattikonda</strong>, Aryan</div>
-                <div class="paper-venue">International Conference on Intelligent Robots and Systems (IROS) 2022 </div>
+                <div class="tags">
+                  <span class="tag tag--conf">IROS 2022</span>
+                </div>
                 <div class="paper-links">
                     <a href="https://openreview.net/pdf?id=tvPtqbjsKgX" target="_blank" rel="noopener noreferrer">paper</a>
                     <a href="#" target="_blank" rel="noopener noreferrer">code</a>
                 </div>
             </div>
         </div>
+
+        <!-- Example: ICLR 2025 (Oral) tag snippet you can reuse anywhere -->
+        <!--
+        <div class="tags">
+          <span class="tag tag--conf">ICLR 2025</span>
+          <span class="tag tag--oral">Oral</span>
+        </div>
+        -->
     </div>
 </body>
 </html>
